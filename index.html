@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
 </head>
+
 <body>
-    <div>
-        <h1>Enter your birth date:</h1>
-        <form>TESTE</form>
+    <div class="container">
+        <h1>How old are you?</h1>
+        <input type="text" id="date-input" placeholder="Pick a date" readonly>
+        <div id="age-display"> Age: </div>
     </div>
-    
+   
+    <!-- Load js-datepicker from CDN -->
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <!-- Load Luxon from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
+    <!-- Load your own script last -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
